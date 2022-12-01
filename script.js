@@ -5,10 +5,10 @@ const resul_odd = []
 
 
 const isOdd = (num) => num % 2 !== 0;
-const odd = numbers.filter(isOdd).push('result_odd');
+const odd = numbers.filter(isOdd)
 
 const isEven = (num) => num % 2 == 0;
-const even = numbers.filter(isEven).push('result_even');
+const even = numbers.filter(isEven)
 
 
 console.log(odd, even);
