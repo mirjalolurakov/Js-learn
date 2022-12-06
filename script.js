@@ -254,7 +254,9 @@ let other = []
   }
 })
 
-console.log(emails, 'it is other :', other)
+
+console.log(emails,)
+console.log('These are others:', other);
 
 
 
