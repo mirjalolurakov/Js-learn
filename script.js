@@ -38,6 +38,8 @@ allAssigin.filter(valueTypes => {
       allAssigin.push(types.number)
    }else if(typeof (valueTypes) === 'string'){
        allAssigin.push(types.string)
+   }else if(typeof (valueTypes) === 'boolean'){
+            allAssigin.push(types.boolean)
    }
    else{
       console.log(bye)
