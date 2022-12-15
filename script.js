@@ -1,131 +1,125 @@
-const cars = [
-
-
+let people = [
    {
-      car_name: "Amg",
-      price: 84900,
-      made: "Germany",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Timur',
+      info: {
+         school: '235',
+         faculity: 'SMM'
+      },
    },
    {
-      car_name: "Volkswagen",
-      price: 31224,
-      made: "Germany",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Imran',
+      info: {
+         school: 'ne izvestno',
+         faculity: 'programming'
+      },
    },
    {
-      car_name: "Bmw",
-      price: 89032,
-      made: "Germany",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Aminjon',
+      info: {
+         school: '444',
+         faculity: 'Dizayn'
+      },
    },
    {
-      car_name: "Toyta",
-      price: 75349,
-      made: "Japan",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Maxmud',
+      info: {
+         school: '777',
+         faculity: '3dsmax'
+      },
    },
    {
-      car_name: "Lada",
-      price: 33990,
-      made: "Russia",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Muxammad',
+      info: {
+         school: '5555',
+         faculity: 'Backend'
+      },
    },
    {
-      car_name: "Nissan",
-      price: 29400,
-      made: "Japan",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Timur',
+      info: {
+         school: '235',
+         faculity: 'SMM'
+      },
    },
    {
-      car_name: "Laborgini",
-      price: 20,
-      made: "Italy",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Imran',
+      info: {
+         school: 'ne izvestno',
+         faculity: 'programming'
+      },
    },
-
    {
-      car_name: "Ford",
-      price: 99999,
-      made: "Germany",
-      id: 9,
-      country__code: "29",
+      id: Math.random(),
+      name: 'Aminjon',
+      info: {
+         school: '444',
+         faculity: 'Dizayn'
+      },
    },
-
    {
-      "color": ["Long Beach Blue", "Boat Tail Brown", " Amplify Orange", "Platinum Jubilee Silver", " Frozen Berry", "ow Gray", "Thundernight Metallic"]
-
-   }
-
-
+      id: Math.random(),
+      name: 'Maxmud',
+      info: {
+         school: '777',
+         faculity: '3dsmax'
+      },
+   },
+   {
+      id: Math.random(),
+      name: 'Maxmud',
+      info: {
+         school: '777',
+         faculity: '3dsmax'
+      },
+   },
+   {
+      id: Math.random(),
+      name: 'Muxammad',
+      info: {
+         school: '5555',
+         faculity: 'Backend'
+      },
+   },
+]
+let count = []
+let categories = [
+   {
+      course: 'SMM',
+      count: 0
+   },
+   {
+      course: 'PROGRAMMING',
+      count: 0
+   },
+   {
+      course: '3DSMAX',
+      count: 0
+   },
+   {
+      course: ' DIZAYN',
+      count: 0
+   },
+   {
+      course: 'BACKEND',
+      count: 0
+   },
 ]
 
-let cheap = []
+for (const person of people) {
+   if (person.info.faculity === 'SMM') {
+      Object.keys(person).length
+      categories.push(person)
+   } else if (person.info.faculity === 'programming') {
 
-//forEach
-cars.forEach(car => {
-   if (car.price < 35000) {
-      cheap.push(car)
+   } else if (person.info.faculity === 'Dizayn') {
 
    }
-})
-
-console.log(cheap)
-
-// map
-// cars.map(carTwo => {
-//    if (carTwo.price < 35000) {
-//       cheap.push(carTwo)
-//    }
-// })
-
-// console.log(cheap);
-
-// cars.filter(car => {
-//    if (car.price < 35000) {
-//       cheap.push(car)
-//    }
-// })
-// console.log(cheap);
-
-// JS 4
-
-// let checkIndex = prompt('Enter')
-// let userName = ['Aleksey', 'Usman', 'Abu', 'Ali', 'Xasan']
-
-// const mapUsername = userName.map((item, index) => {
-//    if (checkIndex !== index) {
-//       userName[index]
-//    } else {
-//       userName.splice()
-//    }
-// })
-
-// console.log(mapUsername)
-
-
-// userName.filter(item, index => {
-//    if (index !== userName[checkIndex]) {
-//       return userName
-//    }
-// })
-
-// console.log(userName);
-
-// // JS 5
-
-const arr = [20, 35, 44]
-
-const sum = arr.reduce(function (firstValue, secondValue) {
-   return firstValue + secondValue;
-});
-console.log(sum)
-
-
+}
+console.log(categories)
