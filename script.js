@@ -88,10 +88,11 @@ let people = [
       },
    },
 ]
-let count = []
+
+
 let categories = [
    {
-      course: 'SMM',
+      course: ' SMM',
       count: 0
    },
    {
@@ -99,27 +100,37 @@ let categories = [
       count: 0
    },
    {
-      course: '3DSMAX',
+      course: '     3DSMAX',
       count: 0
    },
    {
-      course: ' DIZAYN',
+      course: 'DIZAYN',
       count: 0
    },
    {
-      course: 'BACKEND',
+      course: '   BACKEND',
       count: 0
    },
 ]
 
+
+
+
+
 for (const person of people) {
-   if (person.info.faculity === 'SMM') {
-      Object.keys(person).length
-      categories.push(person)
-   } else if (person.info.faculity === 'programming') {
-
-   } else if (person.info.faculity === 'Dizayn') {
-
+   let transformDizaynText = categories[3].course[0].toUpperCase() + categories[3].course.toLowerCase().slice(1)
+   if (person.info.faculity === categories[0].course.trim()) {
+      categories[0].count = categories[0].count + 1
+   } else if (person.info.faculity === categories[1].course.toLocaleLowerCase()) {
+      categories[1].count = categories[1].count + 1
+   } else if (person.info.faculity === categories[2].course.trim().toLowerCase()) {
+      categories[2].count = categories[2].count + 1
+   } else if (person.info.faculity === categories[3].course === transformDizaynText) {
+      categories[3].count = categories[3].count + 1
+   } else if (person.info.faculity === categories[4].course.trim().toLowerCase) {
+      categories[4].count = categories[4].count + 1
    }
 }
 console.log(categories)
+
+
