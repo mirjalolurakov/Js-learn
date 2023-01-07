@@ -17,7 +17,6 @@ function calculateProportion(total, broken) {
 }
 console.log(calculateProportion(1500, "23%"))
 
-
-
+//didn't understand the percentage as shown as a string or so 0.23
 
 
