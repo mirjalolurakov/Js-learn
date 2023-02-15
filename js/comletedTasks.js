@@ -1,5 +1,5 @@
 // // First homework
-// let username = "Jaks "
+// let username = "Jaks"
 // username  = "Tom"
 // let balance = 25000
 // let car = 4480
