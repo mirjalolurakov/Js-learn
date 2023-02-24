@@ -1149,117 +1149,117 @@
 
 //     responseContent.appendChild(userNameText)
 // }
-let hotel = [
-   [
-      {
-         room: 1,
-         price: 300,
-         brand: "Luxe",
-         children: false,
-      },
-      {
-         room: 2,
-         price: 4000,
-         brand: "Deluxe",
-         children: true,
-      },
-      {
-         room: 3,
-         price: 1000,
-         brand: "Deluxe",
-         children: false,
-      },
-      {
-         room: 4,
-         price: 900,
-         brand: "Luxe",
-         children: true,
-      },
-   ],
-   [
-      {
-         room: 5,
-         price: 700,
-         brand: "Luxe",
-         children: true,
-      },
-      {
-         room: 6,
-         price: 79000,
-         brand: "President",
-         children: true,
-      },
-      {
-         room: 7,
-         price: 600,
-         brand: "Luxe",
-         children: false,
-      },
-      {
-         room: 8,
-         price: 950,
-         brand: "Luxe",
-         children: true,
-      },
-   ],
-   [
-      {
-         room: 9,
-         price: 1900,
-         brand: "Deluxe",
-         children: false,
-      },
-      {
-         room: 10,
-         price: 5000,
-         brand: "Deluxe",
-         children: true,
-      },
-      {
-         room: 11,
-         price: 1000,
-         brand: "Deluxe",
-         children: false,
-      },
-      {
-         room: 12,
-         price: 250,
-         brand: "Luxe",
-         children: false,
-      },
-   ],
-   [
-      {
-         room: 13,
-         price: 10000,
-         brand: "President",
-         children: true,
-      },
-      {
-         room: 11,
-         price: 8000,
-         brand: "President",
-         children: false,
-      },
-   ],
-];
+// let hotel = [
+//    [
+//       {
+//          room: 1,
+//          price: 300,
+//          brand: "Luxe",
+//          children: false,
+//       },
+//       {
+//          room: 2,
+//          price: 4000,
+//          brand: "Deluxe",
+//          children: true,
+//       },
+//       {
+//          room: 3,
+//          price: 1000,
+//          brand: "Deluxe",
+//          children: false,
+//       },
+//       {
+//          room: 4,
+//          price: 900,
+//          brand: "Luxe",
+//          children: true,
+//       },
+//    ],
+//    [
+//       {
+//          room: 5,
+//          price: 700,
+//          brand: "Luxe",
+//          children: true,
+//       },
+//       {
+//          room: 6,
+//          price: 79000,
+//          brand: "President",
+//          children: true,
+//       },
+//       {
+//          room: 7,
+//          price: 600,
+//          brand: "Luxe",
+//          children: false,
+//       },
+//       {
+//          room: 8,
+//          price: 950,
+//          brand: "Luxe",
+//          children: true,
+//       },
+//    ],
+//    [
+//       {
+//          room: 9,
+//          price: 1900,
+//          brand: "Deluxe",
+//          children: false,
+//       },
+//       {
+//          room: 10,
+//          price: 5000,
+//          brand: "Deluxe",
+//          children: true,
+//       },
+//       {
+//          room: 11,
+//          price: 1000,
+//          brand: "Deluxe",
+//          children: false,
+//       },
+//       {
+//          room: 12,
+//          price: 250,
+//          brand: "Luxe",
+//          children: false,
+//       },
+//    ],
+//    [
+//       {
+//          room: 13,
+//          price: 10000,
+//          brand: "President",
+//          children: true,
+//       },
+//       {
+//          room: 11,
+//          price: 8000,
+//          brand: "President",
+//          children: false,
+//       },
+//    ],
+// ];
 
-let rooms = {
-   all_roms: [],
-   rooms: 0,
-};
-let brands = {
-   president: [],
-   deluxe: [],
-   luxe: [],
-};
+// let rooms = {
+//    all_roms: [],
+//    rooms: 0,
+// };
+// let brands = {
+//    president: [],
+//    deluxe: [],
+//    luxe: [],
+// };
 
-let room_level = {
-   perviy: 0,
-   vtoroy: 0,
-   tretiy: 0,
-   chetvertiy: 0,
-};
+// let room_level = {
+//    perviy: 0,
+//    vtoroy: 0,
+//    tretiy: 0,
+//    chetvertiy: 0,
+// };
 //1 отфильтровать по категориям
 //2 добавить ключ eting с буленовым значением в каждый номер
 //3 посчитать и красиво раставить все команты переменную rooms
@@ -1269,58 +1269,90 @@ let room_level = {
 //7 найти все комнаты в которых живут дети
 
 // Task 1 
-for (let i = 0; i < hotel.length; i++) {
-   for (let j = 0; j < hotel[i].length; j++) {
-      if (hotel[i][j].brand == 'Deluxe') {
-         brands.deluxe.push(hotel[i][j])
-      } else if (hotel[i][j].brand == 'Luxe') {
-         brands.luxe.push(hotel[i][j])
-      } else if (hotel[i][j].brand == 'President')
-         brands.president.push(hotel[i][j])
-   }
-}
+// for (let i = 0; i < hotel.length; i++) {
+//    for (let j = 0; j < hotel[i].length; j++) {
+//       if (hotel[i][j].brand == 'Deluxe') {
+//          brands.deluxe.push(hotel[i][j])
+//       } else if (hotel[i][j].brand == 'Luxe') {
+//          brands.luxe.push(hotel[i][j])
+//       } else if (hotel[i][j].brand == 'President')
+//          brands.president.push(hotel[i][j])
+//    }
+// }
 
 // Task 2 
-for (let i = 0; i < hotel.length; i++) {
-   for (let j = 0; j < hotel[i].length; j++) {
-      hotel[i][j].eating = true, false;
-   }
-}
+// for (let i = 0; i < hotel.length; i++) {
+//    for (let j = 0; j < hotel[i].length; j++) {
+//       hotel[i][j].eating = true, false;
+//    }
+// }
 
 // Task 4
-let expensiveRoom = hotel.reduce((max, min) => max.price > min.price ? max : min);
+// let expensiveRoom = hotel.reduce((max, min) => max.price > min.price ? max : min);
 
 //task 7 
-let allChildRooms = [];
-for (let i = 0; i < hotel.length; i++) {
-   for (let j = 0; j < hotel[i].length; j++) {
-      if (hotel[i][j].children === true) {
-         allChildRooms.push(hotel[i][j]);
-      }
+// let allChildRooms = [];
+// for (let i = 0; i < hotel.length; i++) {
+//    for (let j = 0; j < hotel[i].length; j++) {
+//       if (hotel[i][j].children === true) {
+//          allChildRooms.push(hotel[i][j]);
+//       }
 
-   }
-}
-
-
+//    }
+// }
 
 
 
 
-console.log('Brands =>', brands)
-console.log('Max room price =>', expensiveRoom)
-console.log('Rooms with children', allChildRooms)
 
 
-const cards_block = document.querySelector('.cards');
-const cards = document.querySelectorAll('.cards > div');
+// console.log('Brands =>', brands)
+// console.log('Max room price =>', expensiveRoom)
+// console.log('Rooms with children', allChildRooms)
 
-function start() {
-   const random = Math.floor(Math.random() * 15); // От 1 до 15
-   cards_block.style.left = -random * 100 + 'px';
-   setTimeout(function () {
-      random++;
-      cards[random].style.background = '#7B90F7';
-      cards[random].style.color = 'white';
-   }, 5000)
-}
+// Random number
 
+// const cards_block = document.querySelector('.cards');
+// const cards = document.querySelectorAll('.cards > div');
+
+// function start() {
+//    const random = Math.floor(Math.random() * 15); // От 1 до 15
+//    cards_block.style.left = -random * 100 + 'px';
+//    setTimeout(function () {
+//       random++;
+//       cards[random].style.background = '#7B90F7';
+//       cards[random].style.color = 'white';
+//    }, 5000)
+// }
+
+/// Counter Dom js
+///HTML 
+//     <div class="counters wrapper">
+//         <div class="counters_content">
+//             <div class="value" num="777"></div>
+//             <div class="value" num="776"></div>
+//             <div class="value" num="209"></div>
+//             <div class="value" num="777"></div>
+//             <div class="value" num="777"></div>
+//         </div>
+
+//     </div>
+
+// const counters = document.querySelectorAll('.value')
+// const speed = 300;
+
+// counters.forEach(counter => {
+//     const animate = () => {
+//         const value = +counter.getAttribute('num');
+//         const data = +counter.innerText;
+
+//         const time = value / speed;
+
+
+//         if (data < value) {
+//             counter.innerText = Math.ceil(data + time);
+//             setTimeout(animate, 1);
+
+//         }
+//     }
+//     animate();
