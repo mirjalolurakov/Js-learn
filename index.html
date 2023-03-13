@@ -6,85 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<style>
-        body {
-	margin: 0;
-	padding: 0;
-
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-.hamburger {
-	position: fixed;
-	z-index: 100;
-	top: 1rem;
-	right: 1rem;
-	padding: 4px;
-	border: black solid 1px;
-	background: white;
-	cursor: pointer;
-}
-
-.menu {
-	position: fixed;
-	transform: translateY(-100%);
-	transition: transform 0.2s;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 99;
-	background: black;
-	color: white;
-	list-style: none;
-	padding-top: 4rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 30px;
-
-	text-decoration: none;
-}
-
-.menu a {
-	text-decoration: none;
-	list-style: none;
-}
-
-.closeIcon {
-	display: none;
-}
-
-.showMenu {
-	transform: translateY(0);
-}
-    </style>      
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <ul class="menu">
-        <li><a class="menuItem" href="#">Home</a></li>
-        <li><a class="menuItem" href="#">Profile</a></li>
-        <li><a class="menuItem" href="#">About</a></li>
-        <li><a class="menuItem" href="#">Contacts</a></li>
-    </ul>
-    <button class="hamburger">
-        <!-- material icons https://material.io/resources/icons/ -->
-        <i class="menuIcon material-icons">menu</i>
-        <i class="closeIcon material-icons">close</i>
-    </button>
+    <header>
+        <div class="wrapper">
+            <div class="offer__action ">
+                <button data-modal class="btn btn__modal btn">Connect with us</button>
+            </div>
+        </div>
+    </header>
+    <div class="container wrapper">
+        <div class="col-6 col-s-9 title">
+            <h1>Supercharged for pros.</h1>
+            <p>The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip —
+                the first Apple silicon designed for pros — you get groundbreaking performance and amazing battery life.
+                Add
+                to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all
+                the
+                ports you need. The first notebook of its kind, this MacBook Pro is a beast.</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="main__content ">
+            <div class="mac__content ">
+                <div class="mac__img">
+                    <img class="main__img" src="./src/assets/img/mac.png" alt="mac">
+                </div>
+
+            </div>
+            <div class="mac__info wrapper">
+                <div class="mac__title">Macbook Pro</div>
+                <span>White</span>
+                <div class="mac__price">$1,999</div>
+            </div>
+        </div>
+        <div class="choose_content wrapper">
+            <button class="white_btn">White</button>
+            <button class="space_btn">Space Gray</button>
+        </div>
+        <div class="choose__memory">
+            <div class="memory active memory_defTb">
+                <p>512 GB SSD</p>
+            </div>
+            <div class="memory">
+                <div class="memory_inf memory_oneTb">
+                    <p>1 TB SSD</p>
+                    <h2>+$200</h2>
+                </div>
+            </div>
+            <div class="memory">
+                <div class="memory_inf memory_twoTb">
+                    <p>2 TB SSD</p>
+                    <h2>+$600</h2>
+                </div>
+
+            </div>
+            <div class="memory">
+                <div class="memory_inf memory_threeTb">
+                    <p>4 TB SSD</p>
+                    <h2>+$1200</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal ">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div data-close class="modal__close">&times;</div>
+                        <div class="modal__title">We will contact you as soon as possible!</div>
+                        <input required placeholder="Your name" name="name" type="text" class="modal__input">
+                        <input required placeholder="Your phone number" name="phone" type="phone" class="modal__input">
+                        <button class="btn btn_dark btn_min">Call me back</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
